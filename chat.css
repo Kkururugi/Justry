@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+}
+
+/* Header Styles (same for all pages) */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Show it only on mobile */
+}
+
+header #nav-menu {
+  display: flex;
+}
+
+header #nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header #nav-menu ul li {
+  margin-right: 20px;
+}
+
+header #nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header #nav-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+header .user-controls a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 120px); /* Adjust height based on header size */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* Chat Header (Who you're chatting with) */
+.chat-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Message Area */
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Message Styles */
+.message {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message.me {
+  background-color: #4CAF50;
+  color: white;
+  align-self: flex-end;
+}
+
+.message.them {
+  background-color: #e0e0e0;
+  color: #333;
+  align-self: flex-start;
+}
+
+/* Input Area */
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+#messageInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#sendBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background-color: #45a049;
+}
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+  <script type="module" src="profile.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">QuestWalker</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="quest-posting.html">Activity</a></li>
+        <li><a href="chat.html">Chat</a></li>
+      </ul>
+    </nav>
+    <div class="user-controls">
+      <img src="profile-placeholder.png" id="profile-img" alt="Profile Picture"/>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-info">
+      <h2 id="user-name">Loading...</h2>
+      <img id="profilePic" src="profile-placeholder.png" alt="Profile Picture" class="profile-pic"/>
+    </section>
+
+    <section id="about-me-section">
+      <h3>About Me</h3>
+      <textarea id="aboutMeInput" placeholder="Write something about yourself..."></textarea>
+      <button id="saveAboutMe">Save</button>
+    </section>
+
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <p id="average-rating">Loading rating...</p>
+      <div id="reviews-list"></div>
+    
+      <div class="review-form">
+        <h3>Leave a Review</h3>
+        <textarea id="review-text" placeholder="Write your review here..."></textarea>
+        <select id="rating-select">
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Average</option>
+          <option value="2">2 - Poor</option>
+          <option value="1">1 - Bad</option>
+        </select>
+        <button id="submit-review">Submit Review</button>
+      </div>
+    </section>
+    
+
+  <div class="logout-container">
+    <button id="logout-btn">Logout</button>
+  </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestWalker - Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">QuestWalker</div>
+      
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+          &#9776; <!-- Unicode for hamburger -->
+        </div>
+      
+        <!-- Navigation -->
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="homepage.html" id="home-link">Home</a></li>
+            <li><a href="quest-posting.html" id="activity-link">Activity</a></li>
+            <li><a href="chat.html" id="chat-link">Chat</a></li>
+          </ul>
+        </nav>
+      
+        <!-- User + Search -->
+        <div class="user-controls">
+          <a href="profile.html" id="profile-link">
+            <img src="profile-placeholder.png" alt="User Profile" id="profile-img">
+          </a>
+        </div>
+      
+        <input type="text" id="search-bar" placeholder="Search quests..." oninput="searchQuests()">
+      </header>
+      
+
+    <div class="content">
+        <h2>Explore Quests</h2>
+
+        <!-- Categories Section -->
+        <div id="categories">
+            <h3>Categories</h3>
+            <ul id="category-list">
+                <!-- Categories will be dynamically added here -->
+            </ul>
+        </div>
+
+        <h2>Quests</h2>
+        <div id="quests-list">
+            <!-- Quest items will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Firebase Script -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="homepage.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
