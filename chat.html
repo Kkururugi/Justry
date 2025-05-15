@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>QuestWalker Chat</title>
-  <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="chat.css" />
 </head>
 <body>
-  <!-- Header with Navigation -->
+  <!-- Top Navigation -->
   <header>
     <div class="logo">QuestWalker</div>
 
     <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger">
-      &#9776; <!-- Unicode for hamburger -->
-    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
 
     <!-- Navigation -->
     <nav id="nav-menu">
@@ -25,36 +23,33 @@
       </ul>
     </nav>
 
-    <!-- User + Search Controls -->
+    <!-- User Controls -->
     <div class="user-controls">
       <a href="profile.html" id="profile-link">
-        <img src="profile-placeholder.png" alt="User Profile" id="profile-img">
+        <img src="profile-placeholder.png" alt="User Profile" id="profile-img" />
       </a>
     </div>
   </header>
 
-  <!-- Search Bar for Users -->
-<input type="text" id="searchInput" placeholder="Search users..." />
-<div id="userList"></div>
+  <!-- Main Chat UI Layout -->
+  <div class="chat-wrapper">
+    <!-- Sidebar for Users -->
+    <div class="sidebar">
+      <input type="text" id="searchInput" placeholder="Search users..." />
+      <div id="userList"></div>
+    </div>
 
-  <!-- Chat Container -->
-  <div class="chat-container">
-    <!-- Chat Header: Dynamic User Name -->
-    <div id="chatHeader" class="chat-header">Chatting with: [User's Name]</div>
-
-    <!-- Messages Display Area -->
-    <div id="messages" class="messages"></div>
-
-    <!-- Input Area for Messages -->
-    <div class="input-container">
-      <input type="text" id="messageInput" placeholder="Type a message..." />
-      <button id="sendBtn">Send</button>
+    <!-- Main Chat Area -->
+    <div class="chat-main">
+      <div class="chat-header" id="chatHeader">Select a user to chat</div>
+      <div class="chat-messages" id="messages"></div>
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button id="sendBtn">Send</button>
+      </div>
     </div>
   </div>
 
   <script type="module" src="chat.js"></script>
 </body>
 </html>
-
-
-
